@@ -14,8 +14,7 @@ public class InvoiceSummery {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof InvoiceSummery)) return false;
-        InvoiceSummery summery = (InvoiceSummery) o;
+        if (!(o instanceof InvoiceSummery summery)) return false;
         return Double.compare(summery.averageFare, averageFare) == 0 && totalNumberOfRides == summery.totalNumberOfRides && Double.compare(summery.totalFare, totalFare) == 0;
     }
 
